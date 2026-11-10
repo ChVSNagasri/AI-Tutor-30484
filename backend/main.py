@@ -18,3 +18,20 @@ def demo():
 def ask():
     return {"message": "What is LLM","Answer":"Long Language Model"}
 
+
+@klu.get("/student")
+def student():
+    return {"id":1,"name":"Ram","gender":"male","course":"DSA"}
+
+
+@klu.get("/students")
+def getstudents():
+    return [
+        {"id":1,"name":"Nagasri","gender":"female","course":"DSA"},
+        {"id":2,"name":"Sri","gender":"female","course":"DSA"},
+        {"id":3,"name":"Sruthi","gender":"female","course":"DSA"}
+    ]
+        
+
+
+
