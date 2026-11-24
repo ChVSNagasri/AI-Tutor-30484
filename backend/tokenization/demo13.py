@@ -14,7 +14,7 @@ corpus_path = Path(__file__).with_name("corpus.txt")
 spm.SentencePieceTrainer.train(
     input=str(corpus_path),
     model_prefix="my_tokenizer",
-    vocab_size=40,
+    vocab_size=100,
     model_type="unigram",
     hard_vocab_limit=False
 )
